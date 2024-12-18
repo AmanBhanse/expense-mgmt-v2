@@ -26,3 +26,25 @@ Execute below lines to run the app
 
 - `npm i`
 - `npm start run`
+
+### The decisions leading to the features and the architecture of the solution.
+
+- Since the overall requirements are simple, have the normal implementation using ReactJs was enough. No need use Redux for state management.
+
+### Any challenges faced during implementation.
+
+- 6 hrs is not enough time to for required app. It costs code quality issue
+
+### What do you think are the most important aspects when developing such an application for a customer (e.g. UX, Performance, ...)? Describe the (to you) two most important aspects in about 100 words each.
+
+- User Experience (UX): A great UX is paramount. It should be intuitive, visually appealing, and easy to navigate. A well-designed interface can significantly improve user satisfaction and engagement.
+- Security: Protecting user data is crucial. Robust security measures, such as strong authentication, encryption, and regular security audits, are essential to safeguard sensitive financial information.
+
+### If you had to choose an alternative technology stack for this project, what would it be and why?
+
+A potential alternative stack could be Vue.js for the frontend and Node.js . Vue.js is known for its simplicity and efficient component-based architecture, making it a great choice for rapid development. Node.js
+
+### If given more time or resources, what innovative features or improvements would you add to enhance the application further?
+
+- Better Architecture for Solution
+- AI-Powered Insights: Utilize machine learning to analyze spending patterns and provide personalized financial advice.
