@@ -29,7 +29,7 @@ Execute below lines to run the app
 
 ### The decisions leading to the features and the architecture of the solution.
 
-- Since the overall requirements are simple, have the normal implementation using ReactJs was enough. No need use Redux for state management.
+- Since the overall requirements are simple, having the normal implementation using ReactJs was enough. No need use Redux for state management.
 
 ### Any challenges faced during implementation.
 
