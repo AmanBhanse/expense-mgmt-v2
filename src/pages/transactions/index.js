@@ -84,8 +84,11 @@ export const Transactions = () => {
               onChange={(e) => setCategoryFilter(e.target.value)}
             >
               <option value="">All Categories</option>
-              <option value="FOOD">Food</option>
-              <option value="TRANSPORT">Transport</option>
+              <option>Food</option>
+              <option>Travel</option>
+              <option>Leisure</option>
+              <option>Business</option>
+              <option>Miscellaneous</option>
               {/* Add more categories here */}
             </select>
           </div>
