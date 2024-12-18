@@ -7,7 +7,7 @@ The Expense Management App is a user-friendly platform for managing personal or 
 ## Features
 
 - Add, edit, and delete expenses.
-- Categorize expenses for better analysis.
+- Filter the transactions based on Categories and date
 
 ---
 
