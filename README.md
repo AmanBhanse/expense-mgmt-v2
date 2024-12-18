@@ -23,5 +23,6 @@ Before running the app, ensure you have the following installed:
 ### Run App
 
 Execute below lines to run the app
-`npm i`
-`npm start run`
+
+- `npm i`
+- `npm start run`
