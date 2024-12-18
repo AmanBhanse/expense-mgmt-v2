@@ -33,7 +33,7 @@ Execute below lines to run the app
 
 ### Any challenges faced during implementation.
 
-- 6 hrs is not enough time to for required app. It costs code quality issue
+- 6 hrs was not enough time to properly fullfill the given requirements. It cost code quality issue.
 
 ### What do you think are the most important aspects when developing such an application for a customer (e.g. UX, Performance, ...)? Describe the (to you) two most important aspects in about 100 words each.
 
