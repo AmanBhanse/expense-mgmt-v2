@@ -30,7 +30,7 @@ Before running the app, ensure you have the following installed:
 
 ### The decisions leading to the features and the architecture of the solution.
 
-- Since the overall requirements are simple, having the normal implementation using ReactJs was enough. No need use Redux for state management.
+- Since the overall requirements are simple, having the normal implementation using ReactJs was enough. No need use Redux for state management or complex architecture.
 
 ### Any challenges faced during implementation.
 
