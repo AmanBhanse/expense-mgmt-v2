@@ -26,7 +26,7 @@ Before running the app, ensure you have the following installed:
 - Open the repo in the CMD/Terminal of your local machine
 - Execute below lines to run the app
   - `npm i`
-  - `npm start run`
+  - `npm run start`
 
 ### The decisions leading to the features and the architecture of the solution.
 
