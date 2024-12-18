@@ -11,7 +11,7 @@ export const SideBar = () => {
             <ul className="nav nav-pills flex-column">
                 <li className="nav-item mb-2">
                     <Link to="/expense" className="nav-link text-white"> {/* Use Link for routing */}
-                        Expense
+                        Expense & Income
                     </Link>
                 </li>
                 <li className="nav-item mb-2">
