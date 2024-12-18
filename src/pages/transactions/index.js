@@ -1,28 +1,6 @@
 import { useEffect, useState } from "react";
 import { Transaction } from "../../components/transaction";
 import { CreateTransaction } from "../../components/create-transaction";
-import { EditTransactionPopup } from "../../components/edit-transaction";
-
-const tmp = [
-  {
-    amount: 2500,
-    created: new Date(),
-    title: "Restaurant",
-    description: "3 people dined at the restaurant",
-    category: "FOOD",
-    isIncome: true,
-    attachments: [],
-  },
-  {
-    amount: 2500,
-    created: new Date(),
-    title: "Groceries",
-    description: "Potato, Tomato",
-    category: "FOOD",
-    isIncome: false,
-    attachments: ["a"],
-  },
-];
 
 export const Transactions = () => {
   const [allTransactions, setAllTransactions] = useState([]);
@@ -34,14 +12,12 @@ export const Transactions = () => {
     const filterTransactions = () => {
       let filtered = allTransactions;
 
-      // Filter by category
       if (categoryFilter) {
         filtered = filtered.filter(
           (transaction) => transaction.category === categoryFilter
         );
       }
 
-      // Filter by date range
       if (dateFilter.start && dateFilter.end) {
         const startDate = new Date(dateFilter.start);
         const endDate = new Date(dateFilter.end);
@@ -89,7 +65,6 @@ export const Transactions = () => {
               <option>Leisure</option>
               <option>Business</option>
               <option>Miscellaneous</option>
-              {/* Add more categories here */}
             </select>
           </div>
           <div className="col-6">
@@ -151,6 +126,14 @@ export const Transactions = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+        <div className="row mt-3">
+          <div className="col text-center">
+            <p className="text-muted">
+              <span className="text-danger">Red rows</span> are expenses,{" "}
+              <span className="text-success">Green rows</span> are income.
+            </p>
           </div>
         </div>
       </div>
