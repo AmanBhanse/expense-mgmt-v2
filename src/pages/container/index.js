@@ -2,11 +2,9 @@ import { Transactions } from "../transactions";
 import { AboutMe } from "../aboutMe";
 import { Header } from "../header";
 import { SideBar } from "../sidebar";
-import { useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom"; // Import routing components
 
 export const Container = () => {
-    const location = useLocation(); // Get current route location
-
     return (
         <section className="overflow-x-hidden vh-100 d-flex flex-column">
             <Header />
@@ -17,8 +15,13 @@ export const Container = () => {
                             <SideBar />
                         </div>
                         <div className="col-10">
-                            {location.pathname === '/expense' ? <Transactions /> : 
-                             location.pathname === '/about' ? <AboutMe /> : null}
+                            <Routes>
+                                {/* Define the routes */}
+                                <Route path="/expense" element={<Transactions />} />
+                                <Route path="/about" element={<AboutMe />} />
+                                {/* Default route */}
+                                <Route path="*" element={<Navigate to="/expense" replace />} />
+                            </Routes>
                         </div>
                     </div>
                 </div>
